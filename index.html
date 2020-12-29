@@ -15,19 +15,18 @@
         PTRIX
 	</header>
 	<br>
-	<hr>
 	
-	<nav class="flex-container center">
+	<nav id="navbar" class="flex-container center">
+		<hr>
 		<ul>
-			<li><a href="#">Our&nbsp;Motive</a></li>
-			<li><a href="#">About&nbsp;Us</a></li>
-			<li><a href="#">Services&nbsp;We&nbsp;Offer</a></li>
+			<li><a href="#Motive">Our&nbsp;Motive</a></li>
+			<li><a href="#About">About&nbsp;Us</a></li>
+			<li><a href="#Services">Services&nbsp;We&nbsp;Offer</a></li>
 		</ul>
+		<hr>
 	</nav>
 
-	<hr>
-
-    <section>
+    <section id="Motive">
         <h1 class="center heading">
             <span class="gradient">O</span>ur Motive
         </h1>
@@ -39,7 +38,7 @@
         </p>
     </section>
 
-    <section>
+    <section id="About">
         <h1 class="center heading">
             <span class="gradient">A</span>bout Us
         </h1>
@@ -49,7 +48,7 @@
         </p>
     </section>
 
-    <section>
+    <section id="Services">
         <h1 class="center heading">
             <span class="gradient">S</span>ervices We Offer
         </h1>
@@ -358,6 +357,20 @@
 			</ul>
 		</div>
 		<div class="center">&copy; PTrix 2020</div>
-      </footer>
+	  </footer>
+	  <script>
+		window.onscroll = function() {myFunction()};
+		
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
 </body>
 </html>
