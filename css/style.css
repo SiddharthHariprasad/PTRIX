@@ -10,7 +10,7 @@
 body {
     background: -webkit-linear-gradient(top,  var(--backgroundColor), rgb(18, 0, 27), rgb(0, 42, 43), var(--backgroundColor)); 
     color: var(--primaryColor);
-	font-size: 0.90em;
+	font-size: 0.80em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 }
